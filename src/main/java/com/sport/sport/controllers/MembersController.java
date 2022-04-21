@@ -37,10 +37,10 @@ public class MembersController {
 
     @GetMapping(value = "/get_members")
     public List<MemberView> getMembers(
-            @RequestParam String name,
-            @RequestParam String role,
-            @RequestParam Long id,
-            @RequestParam String teamName
+            @RequestParam(required = false) String name,
+            @RequestParam(required = false) String role,
+            @RequestParam(required = false) Long id,
+            @RequestParam(required = false) String teamName
     ) {
         List<MemberView> members = new ArrayList<>();
         for (MemberView memberView : membersService.getAll()) {

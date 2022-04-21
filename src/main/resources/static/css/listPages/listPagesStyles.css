@@ -1,0 +1,49 @@
+ul.filters > li {
+    cursor: pointer;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.direction-column {
+    flex-direction: column;
+}
+
+.md-btn-height {
+    height: 60px;
+}
+
+div.row.mid-height {
+    height: 200px;
+}
+
+.max-width {
+    width: 100%;
+}
+
+.small-width {
+    width: 350px;
+}
+
+.mid-width {
+    width: 400px;
+}
+
+.content {
+    width: 80%;
+}
+
+.aside-content {
+    width: 20%;
+    height: 200px;
+    background-color: antiquewhite;
+}

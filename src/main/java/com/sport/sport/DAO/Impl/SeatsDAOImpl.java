@@ -24,7 +24,6 @@ public class SeatsDAOImpl implements SeatsDAO {
         Session session = HibernateSessionFactoryUtil.getSessionFactory().openSession();
         session.beginTransaction();
         session.update(object);
-        session.evict(object);
         session.getTransaction().commit();
         session.close();
     }

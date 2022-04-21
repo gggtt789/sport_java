@@ -39,10 +39,10 @@ public class TeamsController {
 
     @GetMapping(value = "/get_teams")
     public List<TeamView> getTeams(
-            @RequestParam String name,
-            @RequestParam String sport,
-            @RequestParam Long id,
-            @RequestParam Date birthday
+            @RequestParam(required = false) String name,
+            @RequestParam(required = false) String sport,
+            @RequestParam(required = false) Long id,
+            @RequestParam(required = false) Date birthday
     ) {
         List<TeamView> teams = new ArrayList<>();
         for (TeamView teamView : teamsService.getAll()) {
